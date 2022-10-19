@@ -1,0 +1,57 @@
+
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
+        <div fxFlex.lg="20"  fxFlex.lt-sm="40" fxFlex.md="40">
+            <div class="profile-container">
+                <div class="profile-content">
+                    <img src="../../assets/images/profile.png">
+                    <h2>{{name}}</h2>
+                    <span>CFA,CIC</span>
+                    <span class="premium">Premium member</span>
+                    <div class="designation"><mat-icon>school</mat-icon><p>Insurance Agent, Attorney, Accountant</p></div>
+                </div>
+                <button mat-button class="send-email-btn" color="warn"><mat-icon>email</mat-icon> Send a Email</button>
+            </div>
+        </div>
+        <div fxFlex.lg="80"  fxFlex.lt-sm="60" fxFlex.md="60"> 
+            <div class="business-details-header">
+                <h4>Business Details</h4>
+            </div>
+            <div class="business-details-container">
+                <div class="business-details-content">
+                    <div class="business-content-title">                        
+                        <h4 class="title"><mat-icon>person </mat-icon>Profile</h4>                       
+                        <button mat-flat-button color="warn" (click)="editProfile()">Edit Profile</button>
+                    </div>            
+                    <div class="business-content">
+                        <table>
+                            <tr>
+                                <td width="20%">Name:</td>
+                                <td width="80%" >{{name}}</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">Domain:</td>
+                                <td width="80%">{{domain}}</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">Gender:</td>
+                                <td width="80%">{{gender}}</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">Date of Birth:</td>
+                                <td width="80%">{{date | date : "dd/MM/yyyy" }}</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">Phone number:</td>
+                                <td width="80%">+91&nbsp;{{number}}</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">Location:</td>
+                                <td width="80%">{{location}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              
+            </div>  
+        </div>   
+    </div>

@@ -1,0 +1,50 @@
+.main-header{
+
+    &.mat-warn{
+        background-color: #fff;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+        .mat-button{
+            color: #000;
+        }
+    }
+    .mat-toolbar-row{
+        justify-content: space-around;
+        .first-half{
+            display: inline-flex;
+            align-items: center;
+            img{
+                margin-top: 10px;
+                width: 90%;
+            }
+            a{
+              vertical-align: middle;
+                .mat-icon{
+                    margin-right: 10px;
+                }
+                &.active{
+                    color: #c62128;
+                }
+            }
+        }
+        .second-half{
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+    .profile-icon{
+        img{
+            width: 40px;
+        }
+    }
+   
+  
+}
+.main-content{
+    .mat-nav-list a{
+        display: block;
+        text-align: left;
+        .mat-icon{
+            margin-right: 10px;
+        }
+    }
+}

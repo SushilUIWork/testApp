@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div class="edit-popup">
+    <div mat-dialog-content [formGroup]="updateForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Domain</mat-label>
+            <input matInput placeholder="Domain" formControlName="domain">
+        </mat-form-field>
+        <label class="gender" id="gender">Gender </label>
+        <mat-radio-group aria-labelledby="gender" class="gender-radio-group" formControlName="gender">
+            <mat-radio-button value="Male">Male</mat-radio-button>
+            <mat-radio-button value="Female">Female</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Contact number</mat-label>
+            <input matInput type="number" class="example-right-align" placeholder="" formControlName="number">
+            <span matPrefix>+91 &nbsp;</span>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Location</mat-label>
+            <textarea matInput formControlName="location"></textarea>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions class="text-right">
+        <button mat-button (click)="onNoClick()">Cancel</button>
+        <button mat-flat-button color="warn" [mat-dialog-close]="updateForm.value"  cdkFocusInitial>Update</button>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.container{
+    padding: 20px;
+  
+}
+
+.business-details-header{
+    background-color: #e7eacd;
+    padding: 15px;
+    h4{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+}
+.business-details-container{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    .business-details-content{
+        border: 1px solid #d9dde0;
+        padding: 12px;
+        .business-content-title{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #d9dde0;
+            padding-bottom: 10px;
+            h4.title{
+                margin-bottom: 0px;
+                font-size: 16px;
+                padding-top: 5px;
+                .mat-icon{
+                    color: #737a34;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    line-height: 21px;
+                }
+            }
+            button.mat-warn{
+                background-color: #c62128;
+                border-color: #c62128;
+                width: 120px;
+                height: 36px;
+            }
+        }
+        .business-content{
+            padding-top: 12px;
+            table{
+                width: 100%;
+                tr{
+                    td{
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.profile-container{
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    .profile-content{
+        text-align: center;
+        h2{
+            margin-bottom: 0px;
+        }
+        span{
+            padding: 2px 0px;
+            &:first-of-type{
+                color: #828284;
+            }
+            &.premium{
+               &:before
+               {
+                content: "";
+                background-image: url('../../assets/images/crown.png');
+                width: 19px;
+                height: 15px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 100% 100%;
+                margin-left: -25px;
+               }
+            }
+            display: block;
+        }
+        .designation{
+            text-align: left;
+            display: flex;
+            border-bottom: 1px solid #d9dde0;
+            margin-bottom: 20px;
+            .mat-icon{
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 30px;
+            }
+            
+        }
+       
+    }
+    .send-email-btn{    
+        .mat-icon-no-color{
+            margin-right: 5px;
+        }
+        &.mat-warn{
+            color: #c62128;
+        }       
+       
+    }
+}
+
+
+   
